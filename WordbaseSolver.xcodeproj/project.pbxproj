@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56892DD37129C88696FDB115 /* Pods_WordbaseSolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6012F7EE297B21536EB028 /* Pods_WordbaseSolver.framework */; };
+		7C3565FC1E0CC0AF00570335 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3565FB1E0CC0AF00570335 /* AppDelegate.swift */; };
+		7C3565FE1E0CC0AF00570335 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3565FD1E0CC0AF00570335 /* ViewController.swift */; };
+		7C3566011E0CC0AF00570335 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3565FF1E0CC0AF00570335 /* Main.storyboard */; };
+		7C3566041E0CC0AF00570335 /* WordbaseSolver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C3566021E0CC0AF00570335 /* WordbaseSolver.xcdatamodeld */; };
+		7C3566061E0CC0AF00570335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3566051E0CC0AF00570335 /* Assets.xcassets */; };
+		7C3566091E0CC0AF00570335 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3566071E0CC0AF00570335 /* LaunchScreen.storyboard */; };
+		7C3566141E0CC0AF00570335 /* WordbaseSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3566131E0CC0AF00570335 /* WordbaseSolverTests.swift */; };
+		7C35661F1E0CC0AF00570335 /* WordbaseSolverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C35661E1E0CC0AF00570335 /* WordbaseSolverUITests.swift */; };
+		7C43293C1E0CF47E003AFFE1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C43293B1E0CF47E003AFFE1 /* libz.tbd */; };
+		7CF315921E10B9AC00A1BA3D /* words_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CF315911E10B9AC00A1BA3D /* words_en.txt */; };
+		7CF315941E10BA0E00A1BA3D /* WordsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF315931E10BA0E00A1BA3D /* WordsLoader.swift */; };
+		7CF315961E10DC8500A1BA3D /* DispatchQueueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF315951E10DC8500A1BA3D /* DispatchQueueExtensions.swift */; };
+		7CF315981E11035B00A1BA3D /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF315971E11035B00A1BA3D /* Stopwatch.swift */; };
+		7CF3159A1E11122700A1BA3D /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 7CF315991E11122700A1BA3D /* tessdata */; };
+		ACB6271319941C2A8F8CFCB8 /* Pods_WordbaseSolverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA37EAC1ADB1AC01B283A785 /* Pods_WordbaseSolverUITests.framework */; };
+		B86FEA663B4A742E64A7803C /* Pods_WordbaseSolverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32A6983F866D66DAEFE6C63 /* Pods_WordbaseSolverTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C3566101E0CC0AF00570335 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C3565F01E0CC0AF00570335 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C3565F71E0CC0AF00570335;
+			remoteInfo = WordbaseSolver;
+		};
+		7C35661B1E0CC0AF00570335 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C3565F01E0CC0AF00570335 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C3565F71E0CC0AF00570335;
+			remoteInfo = WordbaseSolver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BBF845A1F097472BE710079 /* Pods-WordbaseSolver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordbaseSolver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordbaseSolver/Pods-WordbaseSolver.debug.xcconfig"; sourceTree = "<group>"; };
+		47903D2C11186C77966FC4E8 /* Pods-WordbaseSolver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordbaseSolver.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordbaseSolver/Pods-WordbaseSolver.release.xcconfig"; sourceTree = "<group>"; };
+		7C3565F81E0CC0AF00570335 /* WordbaseSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordbaseSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C3565FB1E0CC0AF00570335 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C3565FD1E0CC0AF00570335 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7C3566001E0CC0AF00570335 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C3566031E0CC0AF00570335 /* WordbaseSolver.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordbaseSolver.xcdatamodel; sourceTree = "<group>"; };
+		7C3566051E0CC0AF00570335 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C3566081E0CC0AF00570335 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C35660A1E0CC0AF00570335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C35660F1E0CC0AF00570335 /* WordbaseSolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordbaseSolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C3566131E0CC0AF00570335 /* WordbaseSolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordbaseSolverTests.swift; sourceTree = "<group>"; };
+		7C3566151E0CC0AF00570335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C35661A1E0CC0AF00570335 /* WordbaseSolverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordbaseSolverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C35661E1E0CC0AF00570335 /* WordbaseSolverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordbaseSolverUITests.swift; sourceTree = "<group>"; };
+		7C3566201E0CC0AF00570335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C4329341E0CDFDB003AFFE1 /* WordbaseSolver-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WordbaseSolver-Bridging-Header.h"; sourceTree = "<group>"; };
+		7C4329381E0CF45B003AFFE1 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		7C43293B1E0CF47E003AFFE1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7CF315911E10B9AC00A1BA3D /* words_en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words_en.txt; sourceTree = "<group>"; };
+		7CF315931E10BA0E00A1BA3D /* WordsLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsLoader.swift; sourceTree = "<group>"; };
+		7CF315951E10DC8500A1BA3D /* DispatchQueueExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtensions.swift; sourceTree = "<group>"; };
+		7CF315971E11035B00A1BA3D /* Stopwatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		7CF315991E11122700A1BA3D /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		7D7E75D6C9847B0AB9530D71 /* Pods-WordbaseSolverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordbaseSolverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordbaseSolverTests/Pods-WordbaseSolverTests.release.xcconfig"; sourceTree = "<group>"; };
+		A221B9987F6F05D9E16232F5 /* Pods-WordbaseSolverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordbaseSolverUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordbaseSolverUITests/Pods-WordbaseSolverUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C32A6983F866D66DAEFE6C63 /* Pods_WordbaseSolverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordbaseSolverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D15921DCF024690323B2102C /* Pods-WordbaseSolverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordbaseSolverUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordbaseSolverUITests/Pods-WordbaseSolverUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB6012F7EE297B21536EB028 /* Pods_WordbaseSolver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordbaseSolver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECB29533B7B7B907B60D190B /* Pods-WordbaseSolverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordbaseSolverTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordbaseSolverTests/Pods-WordbaseSolverTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA37EAC1ADB1AC01B283A785 /* Pods_WordbaseSolverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordbaseSolverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C3565F51E0CC0AF00570335 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C43293C1E0CF47E003AFFE1 /* libz.tbd in Frameworks */,
+				56892DD37129C88696FDB115 /* Pods_WordbaseSolver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C35660C1E0CC0AF00570335 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86FEA663B4A742E64A7803C /* Pods_WordbaseSolverTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C3566171E0CC0AF00570335 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB6271319941C2A8F8CFCB8 /* Pods_WordbaseSolverUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C5FBAC70EEA7889A11E7425 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C43293B1E0CF47E003AFFE1 /* libz.tbd */,
+				7C4329381E0CF45B003AFFE1 /* libz.1.dylib */,
+				EB6012F7EE297B21536EB028 /* Pods_WordbaseSolver.framework */,
+				C32A6983F866D66DAEFE6C63 /* Pods_WordbaseSolverTests.framework */,
+				FA37EAC1ADB1AC01B283A785 /* Pods_WordbaseSolverUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C3565EF1E0CC0AF00570335 = {
+			isa = PBXGroup;
+			children = (
+				7C3565FA1E0CC0AF00570335 /* WordbaseSolver */,
+				7C3566121E0CC0AF00570335 /* WordbaseSolverTests */,
+				7C35661D1E0CC0AF00570335 /* WordbaseSolverUITests */,
+				7C3565F91E0CC0AF00570335 /* Products */,
+				ADEFE093E0DAF66E1DCBF558 /* Pods */,
+				1C5FBAC70EEA7889A11E7425 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7C3565F91E0CC0AF00570335 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C3565F81E0CC0AF00570335 /* WordbaseSolver.app */,
+				7C35660F1E0CC0AF00570335 /* WordbaseSolverTests.xctest */,
+				7C35661A1E0CC0AF00570335 /* WordbaseSolverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C3565FA1E0CC0AF00570335 /* WordbaseSolver */ = {
+			isa = PBXGroup;
+			children = (
+				7CF315991E11122700A1BA3D /* tessdata */,
+				7CF315911E10B9AC00A1BA3D /* words_en.txt */,
+				7CF315931E10BA0E00A1BA3D /* WordsLoader.swift */,
+				7C3565FB1E0CC0AF00570335 /* AppDelegate.swift */,
+				7C3565FD1E0CC0AF00570335 /* ViewController.swift */,
+				7C3565FF1E0CC0AF00570335 /* Main.storyboard */,
+				7C3566051E0CC0AF00570335 /* Assets.xcassets */,
+				7C3566071E0CC0AF00570335 /* LaunchScreen.storyboard */,
+				7C35660A1E0CC0AF00570335 /* Info.plist */,
+				7C3566021E0CC0AF00570335 /* WordbaseSolver.xcdatamodeld */,
+				7C4329341E0CDFDB003AFFE1 /* WordbaseSolver-Bridging-Header.h */,
+				7CF315951E10DC8500A1BA3D /* DispatchQueueExtensions.swift */,
+				7CF315971E11035B00A1BA3D /* Stopwatch.swift */,
+			);
+			path = WordbaseSolver;
+			sourceTree = "<group>";
+		};
+		7C3566121E0CC0AF00570335 /* WordbaseSolverTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C3566131E0CC0AF00570335 /* WordbaseSolverTests.swift */,
+				7C3566151E0CC0AF00570335 /* Info.plist */,
+			);
+			path = WordbaseSolverTests;
+			sourceTree = "<group>";
+		};
+		7C35661D1E0CC0AF00570335 /* WordbaseSolverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7C35661E1E0CC0AF00570335 /* WordbaseSolverUITests.swift */,
+				7C3566201E0CC0AF00570335 /* Info.plist */,
+			);
+			path = WordbaseSolverUITests;
+			sourceTree = "<group>";
+		};
+		ADEFE093E0DAF66E1DCBF558 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BBF845A1F097472BE710079 /* Pods-WordbaseSolver.debug.xcconfig */,
+				47903D2C11186C77966FC4E8 /* Pods-WordbaseSolver.release.xcconfig */,
+				ECB29533B7B7B907B60D190B /* Pods-WordbaseSolverTests.debug.xcconfig */,
+				7D7E75D6C9847B0AB9530D71 /* Pods-WordbaseSolverTests.release.xcconfig */,
+				D15921DCF024690323B2102C /* Pods-WordbaseSolverUITests.debug.xcconfig */,
+				A221B9987F6F05D9E16232F5 /* Pods-WordbaseSolverUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C3565F71E0CC0AF00570335 /* WordbaseSolver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C3566231E0CC0AF00570335 /* Build configuration list for PBXNativeTarget "WordbaseSolver" */;
+			buildPhases = (
+				883F144E42E2CF80882D0703 /* [CP] Check Pods Manifest.lock */,
+				7C3565F41E0CC0AF00570335 /* Sources */,
+				7C3565F51E0CC0AF00570335 /* Frameworks */,
+				7C3565F61E0CC0AF00570335 /* Resources */,
+				9739065CF1AC437066F8DEDD /* [CP] Embed Pods Frameworks */,
+				34CFD9A64F79F9A638D78498 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordbaseSolver;
+			productName = WordbaseSolver;
+			productReference = 7C3565F81E0CC0AF00570335 /* WordbaseSolver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C35660E1E0CC0AF00570335 /* WordbaseSolverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C3566261E0CC0AF00570335 /* Build configuration list for PBXNativeTarget "WordbaseSolverTests" */;
+			buildPhases = (
+				935D6D2359F8B57D51CCEDD4 /* [CP] Check Pods Manifest.lock */,
+				7C35660B1E0CC0AF00570335 /* Sources */,
+				7C35660C1E0CC0AF00570335 /* Frameworks */,
+				7C35660D1E0CC0AF00570335 /* Resources */,
+				FF3F90349CB7E8F44FE4E64A /* [CP] Embed Pods Frameworks */,
+				81F37AC084C148DC11D070F8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C3566111E0CC0AF00570335 /* PBXTargetDependency */,
+			);
+			name = WordbaseSolverTests;
+			productName = WordbaseSolverTests;
+			productReference = 7C35660F1E0CC0AF00570335 /* WordbaseSolverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7C3566191E0CC0AF00570335 /* WordbaseSolverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C3566291E0CC0AF00570335 /* Build configuration list for PBXNativeTarget "WordbaseSolverUITests" */;
+			buildPhases = (
+				6206D5F66899DF561383541D /* [CP] Check Pods Manifest.lock */,
+				7C3566161E0CC0AF00570335 /* Sources */,
+				7C3566171E0CC0AF00570335 /* Frameworks */,
+				7C3566181E0CC0AF00570335 /* Resources */,
+				C0070CCB3BC48FAB1C2A6ED6 /* [CP] Embed Pods Frameworks */,
+				EFBFF32D78DFF32DAA073329 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C35661C1E0CC0AF00570335 /* PBXTargetDependency */,
+			);
+			name = WordbaseSolverUITests;
+			productName = WordbaseSolverUITests;
+			productReference = 7C35661A1E0CC0AF00570335 /* WordbaseSolverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C3565F01E0CC0AF00570335 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Su Sheng Loong";
+				TargetAttributes = {
+					7C3565F71E0CC0AF00570335 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = N9Q3W8EFP8;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					7C35660E1E0CC0AF00570335 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = N9Q3W8EFP8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7C3565F71E0CC0AF00570335;
+					};
+					7C3566191E0CC0AF00570335 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = N9Q3W8EFP8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7C3565F71E0CC0AF00570335;
+					};
+				};
+			};
+			buildConfigurationList = 7C3565F31E0CC0AF00570335 /* Build configuration list for PBXProject "WordbaseSolver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C3565EF1E0CC0AF00570335;
+			productRefGroup = 7C3565F91E0CC0AF00570335 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C3565F71E0CC0AF00570335 /* WordbaseSolver */,
+				7C35660E1E0CC0AF00570335 /* WordbaseSolverTests */,
+				7C3566191E0CC0AF00570335 /* WordbaseSolverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C3565F61E0CC0AF00570335 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C3566091E0CC0AF00570335 /* LaunchScreen.storyboard in Resources */,
+				7CF315921E10B9AC00A1BA3D /* words_en.txt in Resources */,
+				7CF3159A1E11122700A1BA3D /* tessdata in Resources */,
+				7C3566061E0CC0AF00570335 /* Assets.xcassets in Resources */,
+				7C3566011E0CC0AF00570335 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C35660D1E0CC0AF00570335 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C3566181E0CC0AF00570335 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34CFD9A64F79F9A638D78498 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordbaseSolver/Pods-WordbaseSolver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6206D5F66899DF561383541D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81F37AC084C148DC11D070F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordbaseSolverTests/Pods-WordbaseSolverTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		883F144E42E2CF80882D0703 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		935D6D2359F8B57D51CCEDD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9739065CF1AC437066F8DEDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordbaseSolver/Pods-WordbaseSolver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0070CCB3BC48FAB1C2A6ED6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordbaseSolverUITests/Pods-WordbaseSolverUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFBFF32D78DFF32DAA073329 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordbaseSolverUITests/Pods-WordbaseSolverUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF3F90349CB7E8F44FE4E64A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordbaseSolverTests/Pods-WordbaseSolverTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C3565F41E0CC0AF00570335 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C3565FE1E0CC0AF00570335 /* ViewController.swift in Sources */,
+				7CF315981E11035B00A1BA3D /* Stopwatch.swift in Sources */,
+				7CF315941E10BA0E00A1BA3D /* WordsLoader.swift in Sources */,
+				7C3565FC1E0CC0AF00570335 /* AppDelegate.swift in Sources */,
+				7C3566041E0CC0AF00570335 /* WordbaseSolver.xcdatamodeld in Sources */,
+				7CF315961E10DC8500A1BA3D /* DispatchQueueExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C35660B1E0CC0AF00570335 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C3566141E0CC0AF00570335 /* WordbaseSolverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C3566161E0CC0AF00570335 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C35661F1E0CC0AF00570335 /* WordbaseSolverUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C3566111E0CC0AF00570335 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C3565F71E0CC0AF00570335 /* WordbaseSolver */;
+			targetProxy = 7C3566101E0CC0AF00570335 /* PBXContainerItemProxy */;
+		};
+		7C35661C1E0CC0AF00570335 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C3565F71E0CC0AF00570335 /* WordbaseSolver */;
+			targetProxy = 7C35661B1E0CC0AF00570335 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7C3565FF1E0CC0AF00570335 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C3566001E0CC0AF00570335 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7C3566071E0CC0AF00570335 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C3566081E0CC0AF00570335 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C3566211E0CC0AF00570335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7C3566221E0CC0AF00570335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C3566241E0CC0AF00570335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BBF845A1F097472BE710079 /* Pods-WordbaseSolver.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = N9Q3W8EFP8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WordbaseSolver",
+				);
+				INFOPLIST_FILE = WordbaseSolver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codessl.WordbaseSolver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WordbaseSolver/WordbaseSolver-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7C3566251E0CC0AF00570335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47903D2C11186C77966FC4E8 /* Pods-WordbaseSolver.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = N9Q3W8EFP8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WordbaseSolver",
+				);
+				INFOPLIST_FILE = WordbaseSolver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codessl.WordbaseSolver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WordbaseSolver/WordbaseSolver-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7C3566271E0CC0AF00570335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECB29533B7B7B907B60D190B /* Pods-WordbaseSolverTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = N9Q3W8EFP8;
+				INFOPLIST_FILE = WordbaseSolverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codessl.WordbaseSolverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordbaseSolver.app/WordbaseSolver";
+			};
+			name = Debug;
+		};
+		7C3566281E0CC0AF00570335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D7E75D6C9847B0AB9530D71 /* Pods-WordbaseSolverTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = N9Q3W8EFP8;
+				INFOPLIST_FILE = WordbaseSolverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codessl.WordbaseSolverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordbaseSolver.app/WordbaseSolver";
+			};
+			name = Release;
+		};
+		7C35662A1E0CC0AF00570335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D15921DCF024690323B2102C /* Pods-WordbaseSolverUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = N9Q3W8EFP8;
+				INFOPLIST_FILE = WordbaseSolverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codessl.WordbaseSolverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WordbaseSolver;
+			};
+			name = Debug;
+		};
+		7C35662B1E0CC0AF00570335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A221B9987F6F05D9E16232F5 /* Pods-WordbaseSolverUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = N9Q3W8EFP8;
+				INFOPLIST_FILE = WordbaseSolverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codessl.WordbaseSolverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WordbaseSolver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C3565F31E0CC0AF00570335 /* Build configuration list for PBXProject "WordbaseSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3566211E0CC0AF00570335 /* Debug */,
+				7C3566221E0CC0AF00570335 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C3566231E0CC0AF00570335 /* Build configuration list for PBXNativeTarget "WordbaseSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3566241E0CC0AF00570335 /* Debug */,
+				7C3566251E0CC0AF00570335 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C3566261E0CC0AF00570335 /* Build configuration list for PBXNativeTarget "WordbaseSolverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3566271E0CC0AF00570335 /* Debug */,
+				7C3566281E0CC0AF00570335 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C3566291E0CC0AF00570335 /* Build configuration list for PBXNativeTarget "WordbaseSolverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C35662A1E0CC0AF00570335 /* Debug */,
+				7C35662B1E0CC0AF00570335 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7C3566021E0CC0AF00570335 /* WordbaseSolver.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7C3566031E0CC0AF00570335 /* WordbaseSolver.xcdatamodel */,
+			);
+			currentVersion = 7C3566031E0CC0AF00570335 /* WordbaseSolver.xcdatamodel */;
+			path = WordbaseSolver.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7C3565F01E0CC0AF00570335 /* Project object */;
+}
