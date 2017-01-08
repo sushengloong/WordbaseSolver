@@ -17,6 +17,7 @@
 		7C3566141E0CC0AF00570335 /* WordbaseSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3566131E0CC0AF00570335 /* WordbaseSolverTests.swift */; };
 		7C35661F1E0CC0AF00570335 /* WordbaseSolverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C35661E1E0CC0AF00570335 /* WordbaseSolverUITests.swift */; };
 		7C43293C1E0CF47E003AFFE1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C43293B1E0CF47E003AFFE1 /* libz.tbd */; };
+		7C733B8A1E1BE43300A9EF41 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7C733B891E1BE43300A9EF41 /* OpenCVWrapper.mm */; };
 		7CF315921E10B9AC00A1BA3D /* words_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CF315911E10B9AC00A1BA3D /* words_en.txt */; };
 		7CF315941E10BA0E00A1BA3D /* WordsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF315931E10BA0E00A1BA3D /* WordsLoader.swift */; };
 		7CF315961E10DC8500A1BA3D /* DispatchQueueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF315951E10DC8500A1BA3D /* DispatchQueueExtensions.swift */; };
@@ -63,6 +64,8 @@
 		7C4329341E0CDFDB003AFFE1 /* WordbaseSolver-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WordbaseSolver-Bridging-Header.h"; sourceTree = "<group>"; };
 		7C4329381E0CF45B003AFFE1 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		7C43293B1E0CF47E003AFFE1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7C733B881E1BE43300A9EF41 /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		7C733B891E1BE43300A9EF41 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 		7CF315911E10B9AC00A1BA3D /* words_en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words_en.txt; sourceTree = "<group>"; };
 		7CF315931E10BA0E00A1BA3D /* WordsLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsLoader.swift; sourceTree = "<group>"; };
 		7CF315951E10DC8500A1BA3D /* DispatchQueueExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtensions.swift; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				7C4329341E0CDFDB003AFFE1 /* WordbaseSolver-Bridging-Header.h */,
 				7CF315951E10DC8500A1BA3D /* DispatchQueueExtensions.swift */,
 				7CF315971E11035B00A1BA3D /* Stopwatch.swift */,
+				7C733B881E1BE43300A9EF41 /* OpenCVWrapper.h */,
+				7C733B891E1BE43300A9EF41 /* OpenCVWrapper.mm */,
 			);
 			path = WordbaseSolver;
 			sourceTree = "<group>";
@@ -482,6 +487,7 @@
 				7CF315981E11035B00A1BA3D /* Stopwatch.swift in Sources */,
 				7CF315941E10BA0E00A1BA3D /* WordsLoader.swift in Sources */,
 				7C3565FC1E0CC0AF00570335 /* AppDelegate.swift in Sources */,
+				7C733B8A1E1BE43300A9EF41 /* OpenCVWrapper.mm in Sources */,
 				7C3566041E0CC0AF00570335 /* WordbaseSolver.xcdatamodeld in Sources */,
 				7CF315961E10DC8500A1BA3D /* DispatchQueueExtensions.swift in Sources */,
 			);

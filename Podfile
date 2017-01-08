@@ -7,6 +7,7 @@ target 'WordbaseSolver' do
 
   # Pods for WordbaseSolver
   pod 'TesseractOCRiOS', '4.0.0'
+  pod 'OpenCV', '3.1.0.1'
 
   target 'WordbaseSolverTests' do
     inherit! :search_paths

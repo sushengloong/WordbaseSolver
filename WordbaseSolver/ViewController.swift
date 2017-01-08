@@ -36,24 +36,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        var cropped: UIImage?
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-//            print(image.size.debugDescription)
-//            let openCVWrapper = OpenCVWrapper()
-//            openCVWrapper.isThisWorking()
-            
-            let heightToCrop = CGFloat(440.0)
-            let rect = CGRect(x: 0.0, y: heightToCrop, width: image.size.width, height: image.size.height - heightToCrop)
-            let imageRef = image.cgImage!.cropping(to: rect)!
-            cropped = UIImage(cgImage: imageRef).g8_blackAndWhite()
-            
-            imageView.contentMode = .scaleAspectFit
-            imageView.image = cropped
-        }
+        var image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        let heightToCrop = CGFloat(440.0)
+        let rect = CGRect(x: 0.0, y: heightToCrop, width: image.size.width, height: image.size.height - heightToCrop)
+        let imageRef = image.cgImage!.cropping(to: rect)!
+        image = UIImage(cgImage: imageRef)
+        
+        image = OpenCVWrapper.convert(image)
+        
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = image
+        
         dismiss(animated: true, completion: nil)
         
         DispatchQueue.background(background: {
-            let boardCharacters = self.performOCR(image: cropped!)
+            let boardCharacters = self.performOCR(image: self.imageView.image!)
             
             let stopwatch = Stopwatch()
             let foundWords = self.searchWords(boardCharacters: boardCharacters)
@@ -65,11 +63,26 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func performOCR(image: UIImage) -> [[Character]] {
         let tesseract = G8Tesseract(language: "eng")!
+        tesseract.setVariableValue("ABCDEFGHIJKLMNOPQRSTUVWXYZ", forKey: kG8ParamTesseditCharWhitelist)
         tesseract.engineMode = .tesseractOnly
         tesseract.image = image
         tesseract.recognize()
         
         let text = tesseract.recognizedText!
+//        let text = ["ENIONIMESA",
+//                    "XESPOSOTOS",
+//                    "CTELTFRURE",
+//                    "AVANHESLON",
+//                    "SHOUKSLWET",
+//                    "IRCEOCHORN",
+//                    "EHEGRICRUS",
+//                    "NCLAIAGODP",
+//                    "TOTITILRAE",
+//                    "SERTVLTAIT",
+//                    "WNMAEYEPSH",
+//                    "ORGDTKITRG",
+//                    "BAESOILUIF"].joined(separator: "\n")
+        
         print(text)
         return text.components(separatedBy: "\n")
             .filter{ !$0.isEmpty }

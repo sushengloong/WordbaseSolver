@@ -73,3 +73,6 @@ Carthage/Build
 
 # Tesseract data
 *.traineddata
+
+# OSX files
+.DS_STORE
